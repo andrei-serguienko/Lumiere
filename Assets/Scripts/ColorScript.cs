@@ -49,7 +49,7 @@ public class ColorScript : MonoBehaviour
                 break;
             }
 
-            StartCoroutine(removeColor(color));
+            //StartCoroutine(removeColor(color));
             return true;
         } else if (this.color == "red")
         {
@@ -67,7 +67,7 @@ public class ColorScript : MonoBehaviour
                     this.color = "magenta";
                     break;
             }
-            StartCoroutine(removeColor(color));
+            //StartCoroutine(removeColor(color));
             return true;
         }else if (this.color == "blue")
         {
@@ -85,7 +85,7 @@ public class ColorScript : MonoBehaviour
                     return false;
                     break;
             }
-            StartCoroutine(removeColor(color));
+            //StartCoroutine(removeColor(color));
             return true;
         }else if (this.color == "green")
         {
@@ -103,7 +103,7 @@ public class ColorScript : MonoBehaviour
                     this.color = "cyan";
                     break;
             }
-            StartCoroutine(removeColor(color));
+            //StartCoroutine(removeColor(color));
             return true;
         }else if (this.color == "cyan")
         {
@@ -111,7 +111,7 @@ public class ColorScript : MonoBehaviour
             {
                 this.color = "white";
                 gameObject.GetComponent<MeshRenderer>().material = white;
-                StartCoroutine(removeColor(color));
+                //StartCoroutine(removeColor(color));
                 return true;
             }
 
@@ -122,7 +122,7 @@ public class ColorScript : MonoBehaviour
             {
                 this.color = "white";
                 gameObject.GetComponent<MeshRenderer>().material = white;
-                StartCoroutine(removeColor(color));
+                //StartCoroutine(removeColor(color));
                 return true;
             }
 
@@ -133,7 +133,7 @@ public class ColorScript : MonoBehaviour
             {
                 this.color = "white";
                 gameObject.GetComponent<MeshRenderer>().material = white;
-                StartCoroutine(removeColor(color));
+                //StartCoroutine(removeColor(color));
                 return true;
             }
 
