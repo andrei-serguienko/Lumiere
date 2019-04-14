@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Cookie : MonoBehaviour
 {
@@ -19,12 +20,11 @@ public class Cookie : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        print(other);
         if (other.gameObject.name == "Player")
         {
             if (other.GetComponent<ColorScript>().addColor(cookieColor))
             {
-//                Destroy(gameObject);
+                Destroy(gameObject);
             }
         }
     }

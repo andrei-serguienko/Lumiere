@@ -6,16 +6,32 @@ using UnityEngine.AI;
 public class Obstacles : MonoBehaviour
 {
     public string myColor;
+
+    public bool walkable = false;
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.FindWithTag("Player").GetComponent<ColorScript>().color == myColor)
+        if (!walkable)
         {
-            gameObject.GetComponent<NavMeshObstacle>().enabled = false;
+            if (GameObject.FindWithTag("Player").GetComponent<ColorScript>().color == myColor)
+            {
+                gameObject.GetComponent<NavMeshObstacle>().enabled = false;
+            }
+            else
+            {
+                gameObject.GetComponent<NavMeshObstacle>().enabled = true;
+            }
         }
         else
         {
-            gameObject.GetComponent<NavMeshObstacle>().enabled = true;
+            if (GameObject.FindWithTag("Player").GetComponent<ColorScript>().color == myColor)
+            {
+                gameObject.GetComponent<NavMeshModifier>().area = 0;
+            }
+            else
+            {
+                gameObject.GetComponent<NavMeshModifier>().area = 1;
+            }
         }
     }
 }

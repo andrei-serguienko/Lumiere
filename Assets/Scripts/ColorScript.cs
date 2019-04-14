@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class ColorScript : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class ColorScript : MonoBehaviour
     public Material yellow;
     
     public Material white;
+
+    public NavMeshSurface surface;
     
     // Start is called before the first frame update
     void Start()
@@ -49,7 +52,7 @@ public class ColorScript : MonoBehaviour
                 break;
             }
 
-            //StartCoroutine(removeColor(color));
+            StartCoroutine(buildSurface());
             return true;
         } else if (this.color == "red")
         {
@@ -67,7 +70,7 @@ public class ColorScript : MonoBehaviour
                     this.color = "magenta";
                     break;
             }
-            //StartCoroutine(removeColor(color));
+            StartCoroutine(buildSurface());
             return true;
         }else if (this.color == "blue")
         {
@@ -85,7 +88,7 @@ public class ColorScript : MonoBehaviour
                     return false;
                     break;
             }
-            //StartCoroutine(removeColor(color));
+            StartCoroutine(buildSurface());
             return true;
         }else if (this.color == "green")
         {
@@ -103,7 +106,7 @@ public class ColorScript : MonoBehaviour
                     this.color = "cyan";
                     break;
             }
-            //StartCoroutine(removeColor(color));
+            StartCoroutine(buildSurface());
             return true;
         }else if (this.color == "cyan")
         {
@@ -111,7 +114,7 @@ public class ColorScript : MonoBehaviour
             {
                 this.color = "white";
                 gameObject.GetComponent<MeshRenderer>().material = white;
-                //StartCoroutine(removeColor(color));
+                StartCoroutine(buildSurface());
                 return true;
             }
 
@@ -122,7 +125,7 @@ public class ColorScript : MonoBehaviour
             {
                 this.color = "white";
                 gameObject.GetComponent<MeshRenderer>().material = white;
-                //StartCoroutine(removeColor(color));
+                StartCoroutine(buildSurface());
                 return true;
             }
 
@@ -133,7 +136,7 @@ public class ColorScript : MonoBehaviour
             {
                 this.color = "white";
                 gameObject.GetComponent<MeshRenderer>().material = white;
-                //StartCoroutine(removeColor(color));
+                StartCoroutine(buildSurface());
                 return true;
             }
 
@@ -143,80 +146,86 @@ public class ColorScript : MonoBehaviour
         return false;
     }
 
-    IEnumerator removeColor(string color)
+//    IEnumerator removeColor(string color)
+//    {
+//        yield return new WaitForSeconds(removeColorDelay);
+//        switch (this.color)
+//        {
+//            case "red":
+//                if (color == "red")
+//                {
+//                    gameObject.GetComponent<MeshRenderer>().material = noColor;
+//                    this.color = "";
+//                }
+//                break;
+//            case "green":
+//                if (color == "green")
+//                {
+//                    gameObject.GetComponent<MeshRenderer>().material = noColor;
+//                    this.color = "";
+//                }
+//                break;
+//            case "blue":
+//                if (color == "blue")
+//                {
+//                    gameObject.GetComponent<MeshRenderer>().material = noColor;
+//                    this.color = "";
+//                }
+//                break;
+//            case "cyan":
+//                if (color == "green")
+//                {
+//                    gameObject.GetComponent<MeshRenderer>().material = blue;
+//                    this.color = "blue";
+//                }else if (color == "blue")
+//                {
+//                    gameObject.GetComponent<MeshRenderer>().material = green;
+//                    this.color = "green";
+//                }
+//                break;
+//            case "magenta":
+//                if (color == "red")
+//                {
+//                    gameObject.GetComponent<MeshRenderer>().material = blue;
+//                    this.color = "blue";
+//                } else if (color == "blue")
+//                {
+//                    gameObject.GetComponent<MeshRenderer>().material = red;
+//                    this.color = "red";
+//                }
+//                break;
+//            case "yellow":
+//                if (color == "red")
+//                {
+//                    gameObject.GetComponent<MeshRenderer>().material = green;
+//                    this.color = "green";
+//                } else if (color == "green")
+//                {
+//                    gameObject.GetComponent<MeshRenderer>().material = red;
+//                    this.color = "red";
+//                }
+//                break;
+//            case "white":
+//                if (color == "red")
+//                {
+//                    gameObject.GetComponent<MeshRenderer>().material = cyan;
+//                    this.color = "cyan";
+//                } else if (color == "green")
+//                {
+//                    gameObject.GetComponent<MeshRenderer>().material = magenta;
+//                    this.color = "magenta";
+//                } else if (color == "blue")
+//                {
+//                    gameObject.GetComponent<MeshRenderer>().material = yellow;
+//                    this.color = "yellow";
+//                }
+//                break;
+//        }
+//    }
+
+    IEnumerator buildSurface()
     {
-        yield return new WaitForSeconds(removeColorDelay);
-        switch (this.color)
-        {
-            case "red":
-                if (color == "red")
-                {
-                    gameObject.GetComponent<MeshRenderer>().material = noColor;
-                    this.color = "";
-                }
-                break;
-            case "green":
-                if (color == "green")
-                {
-                    gameObject.GetComponent<MeshRenderer>().material = noColor;
-                    this.color = "";
-                }
-                break;
-            case "blue":
-                if (color == "blue")
-                {
-                    gameObject.GetComponent<MeshRenderer>().material = noColor;
-                    this.color = "";
-                }
-                break;
-            case "cyan":
-                if (color == "green")
-                {
-                    gameObject.GetComponent<MeshRenderer>().material = blue;
-                    this.color = "blue";
-                }else if (color == "blue")
-                {
-                    gameObject.GetComponent<MeshRenderer>().material = green;
-                    this.color = "green";
-                }
-                break;
-            case "magenta":
-                if (color == "red")
-                {
-                    gameObject.GetComponent<MeshRenderer>().material = blue;
-                    this.color = "blue";
-                } else if (color == "blue")
-                {
-                    gameObject.GetComponent<MeshRenderer>().material = red;
-                    this.color = "red";
-                }
-                break;
-            case "yellow":
-                if (color == "red")
-                {
-                    gameObject.GetComponent<MeshRenderer>().material = green;
-                    this.color = "green";
-                } else if (color == "green")
-                {
-                    gameObject.GetComponent<MeshRenderer>().material = red;
-                    this.color = "red";
-                }
-                break;
-            case "white":
-                if (color == "red")
-                {
-                    gameObject.GetComponent<MeshRenderer>().material = cyan;
-                    this.color = "cyan";
-                } else if (color == "green")
-                {
-                    gameObject.GetComponent<MeshRenderer>().material = magenta;
-                    this.color = "magenta";
-                } else if (color == "blue")
-                {
-                    gameObject.GetComponent<MeshRenderer>().material = yellow;
-                    this.color = "yellow";
-                }
-                break;
-        }
+        yield return new WaitForSeconds(0.2f);
+        surface.BuildNavMesh();
     }
 }

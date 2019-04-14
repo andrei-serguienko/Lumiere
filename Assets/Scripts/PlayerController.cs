@@ -23,17 +23,4 @@ public class PlayerController : MonoBehaviour
             }
         }       
     }
-
-    private void OnCollisionStay(Collision other)
-    {
-        if (other.gameObject.name == "Red Door" && gameObject.GetComponent<ColorScript>().color == "red")
-        {
-            Physics.IgnoreCollision(GetComponent<Collider>(), other.gameObject.GetComponent<Collider>());
-        }
-    }
-
-    private void OnCollisionExit(Collision other)
-    {
-        throw new System.NotImplementedException();
-    }
 }
