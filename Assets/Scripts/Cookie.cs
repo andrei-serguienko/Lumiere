@@ -22,10 +22,8 @@ public class Cookie : MonoBehaviour
     {
         if (other.gameObject.name == "Player")
         {
-            if (other.GetComponent<ColorScript>().addColor(cookieColor))
-            {
-                Destroy(gameObject);
-            }
+            other.GetComponent<ColorScript>().addColor(cookieColor);
+            Destroy(gameObject);
         }
     }
 }

@@ -59,7 +59,8 @@ public class ColorScript : MonoBehaviour
             switch (color)
             {
                 case "red":
-                    return false;
+                    gameObject.GetComponent<MeshRenderer>().material = noColor;
+                    this.color = "";
                     break;
                 case "green":
                     gameObject.GetComponent<MeshRenderer>().material = yellow;
@@ -85,7 +86,8 @@ public class ColorScript : MonoBehaviour
                     this.color = "cyan";
                     break;
                 case "blue":
-                    return false;
+                    gameObject.GetComponent<MeshRenderer>().material = noColor;
+                    this.color = "";
                     break;
             }
             StartCoroutine(buildSurface());
@@ -99,7 +101,8 @@ public class ColorScript : MonoBehaviour
                     this.color = "yellow";
                     break;
                 case "green":
-                    return false;
+                    gameObject.GetComponent<MeshRenderer>().material = noColor;
+                    this.color = "";
                     break;
                 case "blue":
                     gameObject.GetComponent<MeshRenderer>().material = cyan;
@@ -110,37 +113,64 @@ public class ColorScript : MonoBehaviour
             return true;
         }else if (this.color == "cyan")
         {
-            if (color == "red")
+            switch (color)
             {
+            case "red":
                 this.color = "white";
                 gameObject.GetComponent<MeshRenderer>().material = white;
-                StartCoroutine(buildSurface());
-                return true;
+                break;
+            case "green":
+                this.color = "blue";
+                gameObject.GetComponent<MeshRenderer>().material = blue;
+                break;
+            case "blue":
+                    this.color = "green";
+                    gameObject.GetComponent<MeshRenderer>().material = green;
+                    break;
+            
             }
+            StartCoroutine(buildSurface());
 
-            return false;
         }else if (this.color == "yellow")
         {
-            if (color == "blue")
+            switch (color)
             {
-                this.color = "white";
-                gameObject.GetComponent<MeshRenderer>().material = white;
-                StartCoroutine(buildSurface());
-                return true;
+                case "red":
+                    this.color = "green";
+                    gameObject.GetComponent<MeshRenderer>().material = green;
+                    break;
+                case "green":
+                    this.color = "red";
+                    gameObject.GetComponent<MeshRenderer>().material = red;
+                    break;
+                case "blue":
+                    this.color = "white";
+                    gameObject.GetComponent<MeshRenderer>().material = white;
+                    break;
+            
             }
+            StartCoroutine(buildSurface());
 
-            return false;
         }else if (this.color == "magenta")
         {
-            if (color == "green")
+            
+            switch (color)
             {
-                this.color = "white";
-                gameObject.GetComponent<MeshRenderer>().material = white;
-                StartCoroutine(buildSurface());
-                return true;
+                case "red":
+                    this.color = "blue";
+                    gameObject.GetComponent<MeshRenderer>().material = blue;
+                    break;
+                case "green":
+                    this.color = "white";
+                    gameObject.GetComponent<MeshRenderer>().material = white;
+                    break;
+                case "blue":
+                    this.color = "red";
+                    gameObject.GetComponent<MeshRenderer>().material = red;
+                    break;
+            
             }
-
-            return false;
+            StartCoroutine(buildSurface());
         }
 
         return false;
