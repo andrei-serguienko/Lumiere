@@ -6,6 +6,8 @@ public class ActivateObject : MonoBehaviour
 {
     public GameObject EnableObject;
 
+    public string colorDifferentToActivate;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,5 +24,13 @@ public class ActivateObject : MonoBehaviour
     {
         if (other.gameObject.tag == "Capsule")
             EnableObject.SetActive(true);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name == "Player" && other.gameObject.GetComponent<ColorScript>().color != colorDifferentToActivate)
+        {
+            EnableObject.SetActive(true);
+        }
     }
 }
