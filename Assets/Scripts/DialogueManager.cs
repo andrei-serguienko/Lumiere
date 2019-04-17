@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using System.Globalization;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
+    public Animator anim;
+    public Text dialogText;
+    
     private Queue<string> sentences;
     // Start is called before the first frame update
     void Start()
@@ -14,6 +18,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        anim.SetBool("IsOpen", true);
         sentences.Clear();
 
         foreach (string sentence in dialogue.sentences)
@@ -26,6 +31,7 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
+        Debug.Log("ERE");
         if (sentences.Count == 0)
         {
             EndDialogue();
@@ -33,10 +39,22 @@ public class DialogueManager : MonoBehaviour
         }
 
         string sentence = sentences.Dequeue();
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
     }
 
     private void EndDialogue()
     {
-        throw new System.NotImplementedException();
+        anim.SetBool("IsOpen", false);
+    }
+
+    IEnumerator TypeSentence(string sentence)
+    {
+        dialogText.text = "";
+        foreach (char letter in sentence.ToCharArray())
+        {
+            dialogText.text += letter;
+            yield return null;
+        }
     }
 }
