@@ -36,7 +36,7 @@ public class ColorScript : MonoBehaviour
 
     public bool addColor(string color)
     {
-        if (this.color == "" || this.color == "white")
+        if (this.color == "")
         {
             this.color = color;
             switch (color)
@@ -171,6 +171,24 @@ public class ColorScript : MonoBehaviour
             
             }
             StartCoroutine(buildSurface());
+        } else if (this.color == "white")
+        {
+            switch (color)
+            {
+                case "red":
+                    this.color = "cyan";
+                    gameObject.GetComponent<MeshRenderer>().material = cyan;
+                    break;
+                case "green":
+                    this.color = "magenta";
+                    gameObject.GetComponent<MeshRenderer>().material = magenta;
+                    break;
+                case "blue":
+                    this.color = "yellow";
+                    gameObject.GetComponent<MeshRenderer>().material = yellow;
+                    break;
+            
+            }
         }
 
         return false;
