@@ -10,10 +10,24 @@ public class DialogueManager : MonoBehaviour
     public Text dialogText;
     
     private Queue<string> sentences;
-    // Start is called before the first frame update
+    
+    public static DialogueManager instance = null;        
+
+    
+    void Awake()
+    {
+        if (instance == null)          
+            instance = this;   
+        else if (instance != this)  
+            Destroy(gameObject);          
+        DontDestroyOnLoad(gameObject);   
+    }
+    
     void Start()
     {
         sentences = new Queue<string>();
+        dialogText = GameObject.FindWithTag("Dialog").GetComponent<Text>();
+        anim = GameObject.FindWithTag("AnimDialog").GetComponent<Animator>();
     }
 
     public void StartDialogue(Dialogue dialogue)
