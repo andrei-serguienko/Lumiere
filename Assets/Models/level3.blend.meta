@@ -30,6 +30,19 @@ ModelImporter:
     100048: stairs_000
     100050: stairs_001
     100052: stairs_002
+    100054: Cube_000
+    100056: Cube_014
+    100058: Cube_015
+    100060: Cube_016
+    100062: Cube_017
+    100064: Cube_018
+    100066: Cube_019
+    100068: Cube_020
+    100070: Cube_021
+    100072: firstpart_001
+    100074: firstpart_002
+    100076: firstpart_003
+    100078: firstpart_004
     400000: Cube
     400002: Cube_001
     400004: Cube_002
@@ -57,6 +70,19 @@ ModelImporter:
     400048: stairs_000
     400050: stairs_001
     400052: stairs_002
+    400054: Cube_000
+    400056: Cube_014
+    400058: Cube_015
+    400060: Cube_016
+    400062: Cube_017
+    400064: Cube_018
+    400066: Cube_019
+    400068: Cube_020
+    400070: Cube_021
+    400072: firstpart_001
+    400074: firstpart_002
+    400076: firstpart_003
+    400078: firstpart_004
     2100000: Material_002
     2100002: Material_022
     2100004: Material_011
@@ -87,6 +113,24 @@ ModelImporter:
     2100054: Material_026
     2100056: Material_028
     2100058: Material_027
+    2100060: Material_039
+    2100062: Material_038
+    2100064: Material_037
+    2100066: Material_030
+    2100068: Material_040
+    2100070: Material_041
+    2100072: Material_043
+    2100074: Material_044
+    2100076: Material_045
+    2100078: Material_046
+    2100080: Material_049
+    2100082: Material_048
+    2100084: Material_047
+    2100086: Material_053
+    2100088: Material_052
+    2100090: Material_051
+    2100092: Material_050
+    2100094: Material_054
     2300000: Cube
     2300002: Cube_001
     2300004: Cube_002
@@ -113,6 +157,19 @@ ModelImporter:
     2300046: stairs_000
     2300048: stairs_001
     2300050: stairs_002
+    2300052: Cube_000
+    2300054: Cube_014
+    2300056: Cube_015
+    2300058: Cube_016
+    2300060: Cube_017
+    2300062: Cube_018
+    2300064: Cube_019
+    2300066: Cube_020
+    2300068: Cube_021
+    2300070: firstpart_001
+    2300072: firstpart_002
+    2300074: firstpart_003
+    2300076: firstpart_004
     3300000: Cube
     3300002: Cube_001
     3300004: Cube_002
@@ -139,6 +196,19 @@ ModelImporter:
     3300046: stairs_000
     3300048: stairs_001
     3300050: stairs_002
+    3300052: Cube_000
+    3300054: Cube_014
+    3300056: Cube_015
+    3300058: Cube_016
+    3300060: Cube_017
+    3300062: Cube_018
+    3300064: Cube_019
+    3300066: Cube_020
+    3300068: Cube_021
+    3300070: firstpart_001
+    3300072: firstpart_002
+    3300074: firstpart_003
+    3300076: firstpart_004
     4300000: Cube
     4300002: firstpart
     4300004: second_part
@@ -165,6 +235,19 @@ ModelImporter:
     4300046: second_part_007
     4300048: Cube_013
     4300050: Cube_004
+    4300052: Cube_016
+    4300054: Cube_015
+    4300056: Cube_014
+    4300058: firstpart_001
+    4300060: firstpart_002
+    4300062: firstpart_003
+    4300064: Cube_000
+    4300066: Cube_018
+    4300068: Cube_017
+    4300070: Cube_021
+    4300072: Cube_020
+    4300074: Cube_019
+    4300076: firstpart_004
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}

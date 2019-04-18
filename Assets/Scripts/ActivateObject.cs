@@ -21,7 +21,7 @@ public class ActivateObject : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision other)
-    {
+    { 
         if (other.gameObject.tag == "Capsule")
             EnableObject.SetActive(true);
     }
@@ -31,6 +31,6 @@ public class ActivateObject : MonoBehaviour
         if (other.gameObject.name == "Player" && other.gameObject.GetComponent<ColorScript>().color != colorDifferentToActivate)
         {
             EnableObject.SetActive(true);
-        }
+        } 
     }
 }

@@ -31,7 +31,6 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
-        Debug.Log("ERE");
         if (sentences.Count == 0)
         {
             EndDialogue();

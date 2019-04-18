@@ -8,9 +8,15 @@ public class Obstacles : MonoBehaviour
     public string myColor;
 
     public bool walkable = false;
+
+    public bool isChangingColor;
     // Update is called once per frame
     void Update()
     {
+        if (isChangingColor)
+        {
+            myColor = GetComponent<ColorScript>().color;
+        }
         if (!walkable)
         {
             if (GameObject.FindWithTag("Player").GetComponent<ColorScript>().color == myColor)

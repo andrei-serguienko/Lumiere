@@ -26,6 +26,11 @@ public class buttonPlayer : MonoBehaviour
             ActivatePhysicsObject.GetComponent<Rigidbody>().isKinematic = false;
 
             StartCoroutine(ActivatePhysicsObject.GetComponent<capsuleFall>().timerRewind());
+        } else if (color == "All")
+        {
+            ActivatePhysicsObject.GetComponent<Rigidbody>().isKinematic = false;
+
+            StartCoroutine(ActivatePhysicsObject.GetComponent<capsuleFall>().timerRewind());
         }
     }
 }
