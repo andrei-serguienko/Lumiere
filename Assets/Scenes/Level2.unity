@@ -492,7 +492,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 5.98
   m_Depth: -1
   m_CullingMask:
@@ -516,13 +516,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0.13541807, y: 0.30764866, z: -0.04428402, w: 0.9407727}
-  m_LocalPosition: {x: -12.69, y: 8.35, z: -6.83}
+  m_LocalRotation: {x: 0.23823997, y: 0.27750677, z: -0.10916858, w: 0.9242911}
+  m_LocalPosition: {x: -13.86, y: 11.82, z: -6.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 16.382, y: 36.217003, z: 0}
+  m_LocalEulerAnglesHint: {x: 30.066002, y: 32.184002, z: -4.611}
 --- !u!1001 &550671392
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -786,7 +786,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.2
+  m_VoxelSize: 0.13333334
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 23800000, guid: 5257d273d9913ca4592da9a7da11597f, type: 2}
 --- !u!4 &745482854
@@ -914,6 +914,11 @@ PrefabInstance:
         type: 3}
       propertyPath: sceneName
       value: Level3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2792990005306503624, guid: c8c28fb93b4577f4aba5546da346418a,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8c28fb93b4577f4aba5546da346418a, type: 3}
@@ -1558,6 +1563,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5589444501638933166, guid: 53ab393609a9a1c4197ce05a0a7ca0eb,
+        type: 3}
+      propertyPath: m_Area
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5589444501638933162, guid: 53ab393609a9a1c4197ce05a0a7ca0eb,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1567,11 +1577,6 @@ PrefabInstance:
         type: 3}
       propertyPath: myColor
       value: blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 5589444501638933166, guid: 53ab393609a9a1c4197ce05a0a7ca0eb,
-        type: 3}
-      propertyPath: m_Area
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53ab393609a9a1c4197ce05a0a7ca0eb, type: 3}
@@ -1768,7 +1773,7 @@ PrefabInstance:
     - target: {fileID: 7144557193953374771, guid: 379b16635fa5a57498041989c9a6418a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.6111393
+      value: -3.41
       objectReference: {fileID: 0}
     - target: {fileID: 7144557193953374771, guid: 379b16635fa5a57498041989c9a6418a,
         type: 3}
@@ -1778,7 +1783,7 @@ PrefabInstance:
     - target: {fileID: 7144557193953374771, guid: 379b16635fa5a57498041989c9a6418a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.700813
+      value: 6.07
       objectReference: {fileID: 0}
     - target: {fileID: 7144557193953374771, guid: 379b16635fa5a57498041989c9a6418a,
         type: 3}

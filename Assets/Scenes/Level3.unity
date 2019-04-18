@@ -834,7 +834,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.111739054, g: 0.7194987, b: 0.764151, a: 0}
+  m_BackGroundColor: {r: 0.18823527, g: 0.30613312, b: 0.62352943, a: 1}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -849,7 +849,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 5.08
   m_Depth: -1
   m_CullingMask:
@@ -1274,7 +1274,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.2
+  m_VoxelSize: 0.13333334
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 23800000, guid: df74ecff92693b94a9c575b62d8bfa02, type: 2}
 --- !u!4 &745482854
@@ -2422,7 +2422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   removeColorDelay: 0
-  color: green
+  color: red
   noColor: {fileID: 2100000, guid: 9aa903920bb56fd44aa8fe23f9083664, type: 2}
   red: {fileID: 2100000, guid: f71bfbce2b9553e489ef7f98cfd8df67, type: 2}
   green: {fileID: 2100000, guid: fbbf62f67d8124d47b72bcb81cf5f7a1, type: 2}
@@ -3202,7 +3202,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: fbbf62f67d8124d47b72bcb81cf5f7a1, type: 2}
+      objectReference: {fileID: 2100000, guid: f71bfbce2b9553e489ef7f98cfd8df67, type: 2}
     - target: {fileID: 5589444501638933161, guid: 53ab393609a9a1c4197ce05a0a7ca0eb,
         type: 3}
       propertyPath: isChangingColor

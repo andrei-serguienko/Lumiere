@@ -7,6 +7,9 @@ public class buttonPlayer : MonoBehaviour
     public GameObject ActivatePhysicsObject;
 
     public string color;
+
+    private bool canPress = true;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -21,16 +24,26 @@ public class buttonPlayer : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Player" && other.gameObject.GetComponent<ColorScript>().color == color)
+        if (other.gameObject.name == "Player" && other.gameObject.GetComponent<ColorScript>().color == color && canPress)
         {
+            StartCoroutine(delay());
+            canPress = false;
             ActivatePhysicsObject.GetComponent<Rigidbody>().isKinematic = false;
 
             StartCoroutine(ActivatePhysicsObject.GetComponent<capsuleFall>().timerRewind());
-        } else if (color == "All")
+        } else if (color == "All" && canPress)
         {
+            StartCoroutine(delay());
+            canPress = false;
             ActivatePhysicsObject.GetComponent<Rigidbody>().isKinematic = false;
 
             StartCoroutine(ActivatePhysicsObject.GetComponent<capsuleFall>().timerRewind());
         }
+    }
+
+    private IEnumerator delay()
+    {
+        yield return new WaitForSeconds(10f);
+        canPress = true;
     }
 }
