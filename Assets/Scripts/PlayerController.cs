@@ -8,11 +8,13 @@ public class PlayerController : MonoBehaviour
     public Camera cam;
 
     public NavMeshAgent agent;
+
+    public bool isDialoguing = false;
     
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !isDialoguing)
         {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;

@@ -18,6 +18,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        GameObject.FindWithTag("Player").GetComponent<PlayerController>().isDialoguing = true;
         anim.SetBool("IsOpen", true);
         sentences.Clear();
 
@@ -44,6 +45,7 @@ public class DialogueManager : MonoBehaviour
 
     private void EndDialogue()
     {
+        GameObject.FindWithTag("Player").GetComponent<PlayerController>().isDialoguing = false;
         anim.SetBool("IsOpen", false);
     }
 
