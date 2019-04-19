@@ -133,7 +133,7 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - Explain the remove color system
+    - When you take a color that you already have, it will remove from you
 --- !u!1 &106694418
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,6 +407,35 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 329656848339736568}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &254651676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254651675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79306b04fe58232458b54573f5020b68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - When you take cookies, it will add this color to your current color
+--- !u!114 &254651677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254651675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39c9903ceff92304ba15b8e7db76b034, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wrongColor: All
 --- !u!1 &302957010
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,7 +627,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 593883371, guid: 379b16635fa5a57498041989c9a6418a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 379b16635fa5a57498041989c9a6418a, type: 3}
 --- !u!1 &515380272 stripped
 GameObject:
@@ -2268,9 +2298,9 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'Intro speach
-
-'
+    - In this game the color matter !
+    - It's a point and click
+    - You can press space if you need help for colors ;)
 --- !u!114 &2048216707
 MonoBehaviour:
   m_ObjectHideFlags: 0

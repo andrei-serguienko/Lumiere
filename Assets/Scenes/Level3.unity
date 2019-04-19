@@ -1558,7 +1558,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 593883371, guid: 379b16635fa5a57498041989c9a6418a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 379b16635fa5a57498041989c9a6418a, type: 3}
 --- !u!4 &913601589 stripped
 Transform:
@@ -2490,8 +2491,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1815775076232569619, guid: 8ae233768c6896b419417f628629f819,
         type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815775076232569619, guid: 8ae233768c6896b419417f628629f819,
+        type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: In this level button are different
+      value: In this level button are different, it will change bridge color
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815775076232569619, guid: 8ae233768c6896b419417f628629f819,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: You don't have to specific color to active the button
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1815775076232569618, guid: 8ae233768c6896b419417f628629f819, type: 3}
