@@ -133,7 +133,7 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - Delete Color
+    - Explain the remove color system
 --- !u!1 &106694418
 GameObject:
   m_ObjectHideFlags: 0

@@ -2488,8 +2488,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1815775076232569619, guid: 8ae233768c6896b419417f628629f819,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: In this level button are different
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1815775076232569618, guid: 8ae233768c6896b419417f628629f819, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8ae233768c6896b419417f628629f819, type: 3}
+--- !u!1 &1471383585 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1815775076232569616, guid: 8ae233768c6896b419417f628629f819,
+    type: 3}
+  m_PrefabInstance: {fileID: 1471383584}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1471383586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471383585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ce54100f8ea67d42a83a860193730e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1485369109
 PrefabInstance:
   m_ObjectHideFlags: 0
