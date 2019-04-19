@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.1788373, g: 0.22393012, b: 0.3058084, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731966, g: 0.1341485, b: 0.12107839, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -212,7 +212,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 9aa903920bb56fd44aa8fe23f9083664, type: 2}
+      objectReference: {fileID: 2100000, guid: bca398a489cd06841bdf77bc61629e84, type: 2}
     - target: {fileID: 4052275670216964699, guid: 749f4ee8eb1900c4c94aecf831320938,
         type: 3}
       propertyPath: ActivatePhysicsObject
@@ -223,6 +223,16 @@ PrefabInstance:
       propertyPath: color
       value: All
       objectReference: {fileID: 0}
+    - target: {fileID: 4052275670216964699, guid: 749f4ee8eb1900c4c94aecf831320938,
+        type: 3}
+      propertyPath: MaterailColor
+      value: 
+      objectReference: {fileID: 2100000, guid: bca398a489cd06841bdf77bc61629e84, type: 2}
+    - target: {fileID: 4052275670216964699, guid: 749f4ee8eb1900c4c94aecf831320938,
+        type: 3}
+      propertyPath: noColor
+      value: 
+      objectReference: {fileID: 2100000, guid: 9aa903920bb56fd44aa8fe23f9083664, type: 2}
     - target: {fileID: 4052275670216964698, guid: 749f4ee8eb1900c4c94aecf831320938,
         type: 3}
       propertyPath: EnableObject
@@ -385,7 +395,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 9aa903920bb56fd44aa8fe23f9083664, type: 2}
+      objectReference: {fileID: 2100000, guid: 268f99d331225cf428a85dddc52bab83, type: 2}
     - target: {fileID: 4052275670216964699, guid: 749f4ee8eb1900c4c94aecf831320938,
         type: 3}
       propertyPath: ActivatePhysicsObject
@@ -396,6 +406,16 @@ PrefabInstance:
       propertyPath: color
       value: All
       objectReference: {fileID: 0}
+    - target: {fileID: 4052275670216964699, guid: 749f4ee8eb1900c4c94aecf831320938,
+        type: 3}
+      propertyPath: MaterailColor
+      value: 
+      objectReference: {fileID: 2100000, guid: e8bfa02eeef2e9041b2a969e6ca67af0, type: 2}
+    - target: {fileID: 4052275670216964699, guid: 749f4ee8eb1900c4c94aecf831320938,
+        type: 3}
+      propertyPath: noColor
+      value: 
+      objectReference: {fileID: 2100000, guid: 9aa903920bb56fd44aa8fe23f9083664, type: 2}
     - target: {fileID: 4052275670216964698, guid: 749f4ee8eb1900c4c94aecf831320938,
         type: 3}
       propertyPath: EnableObject
@@ -492,13 +512,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 170076733}
-  m_LocalRotation: {x: 0.53615516, y: 0.097996935, z: 0.22337556, w: 0.8081075}
-  m_LocalPosition: {x: -23.8, y: -1.7, z: 33.5}
+  m_LocalRotation: {x: -0, y: -0.7116482, z: -0, w: 0.70253605}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 55.362003, y: 44.433002, z: 55.090004}
+  m_LocalEulerAnglesHint: {x: 0, y: -90.73801, z: 0}
 --- !u!1 &243198320 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5589444501638933140, guid: 53ab393609a9a1c4197ce05a0a7ca0eb,
@@ -1845,7 +1865,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 9aa903920bb56fd44aa8fe23f9083664, type: 2}
+      objectReference: {fileID: 2100000, guid: ba7bcfee6a122a9418e222a0fbafd89b, type: 2}
     - target: {fileID: 4052275670216964699, guid: 749f4ee8eb1900c4c94aecf831320938,
         type: 3}
       propertyPath: ActivatePhysicsObject
@@ -1856,6 +1876,16 @@ PrefabInstance:
       propertyPath: color
       value: All
       objectReference: {fileID: 0}
+    - target: {fileID: 4052275670216964699, guid: 749f4ee8eb1900c4c94aecf831320938,
+        type: 3}
+      propertyPath: MaterailColor
+      value: 
+      objectReference: {fileID: 2100000, guid: ba7bcfee6a122a9418e222a0fbafd89b, type: 2}
+    - target: {fileID: 4052275670216964699, guid: 749f4ee8eb1900c4c94aecf831320938,
+        type: 3}
+      propertyPath: noColor
+      value: 
+      objectReference: {fileID: 2100000, guid: 9aa903920bb56fd44aa8fe23f9083664, type: 2}
     - target: {fileID: 4052275670216964698, guid: 749f4ee8eb1900c4c94aecf831320938,
         type: 3}
       propertyPath: EnableObject
@@ -2009,7 +2039,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 9aa903920bb56fd44aa8fe23f9083664, type: 2}
+      objectReference: {fileID: 2100000, guid: ba7bcfee6a122a9418e222a0fbafd89b, type: 2}
     - target: {fileID: 4052275670216964699, guid: 749f4ee8eb1900c4c94aecf831320938,
         type: 3}
       propertyPath: ActivatePhysicsObject
@@ -2020,6 +2050,16 @@ PrefabInstance:
       propertyPath: color
       value: All
       objectReference: {fileID: 0}
+    - target: {fileID: 4052275670216964699, guid: 749f4ee8eb1900c4c94aecf831320938,
+        type: 3}
+      propertyPath: MaterailColor
+      value: 
+      objectReference: {fileID: 2100000, guid: ba7bcfee6a122a9418e222a0fbafd89b, type: 2}
+    - target: {fileID: 4052275670216964699, guid: 749f4ee8eb1900c4c94aecf831320938,
+        type: 3}
+      propertyPath: noColor
+      value: 
+      objectReference: {fileID: 2100000, guid: 9aa903920bb56fd44aa8fe23f9083664, type: 2}
     - target: {fileID: 4052275670216964698, guid: 749f4ee8eb1900c4c94aecf831320938,
         type: 3}
       propertyPath: EnableObject
