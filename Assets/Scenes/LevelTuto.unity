@@ -666,6 +666,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 24.875002, y: 63.394005, z: 8.132}
+--- !u!1 &593883369 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3641323973977089564, guid: 379b16635fa5a57498041989c9a6418a,
+    type: 3}
+  m_PrefabInstance: {fileID: 112589659}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &593883370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593883369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79306b04fe58232458b54573f5020b68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - Delete color
+--- !u!114 &593883371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593883369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39c9903ceff92304ba15b8e7db76b034, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wrongColor: All
 --- !u!1 &676522613 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1870901012492446524, guid: 19fe836f7e2294545bf95ee84cb4f9ba,
