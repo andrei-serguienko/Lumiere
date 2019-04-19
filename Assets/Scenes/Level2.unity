@@ -2193,7 +2193,8 @@ PrefabInstance:
     - target: {fileID: 1815775076232569619, guid: 8ae233768c6896b419417f628629f819,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: You can Press "S" to swap the camera
+      value: Sometimes a different point of view can be helpful, try to press the
+        magical "S" button on your beautiful keyboard...!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ae233768c6896b419417f628629f819, type: 3}
