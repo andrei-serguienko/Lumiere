@@ -9,6 +9,9 @@ public class buttonPlayer : MonoBehaviour
     public string color;
 
     private bool canPress = true;
+
+    public Material noColor;
+    public Material MaterailColor;
     
     // Start is called before the first frame update
     void Start()
@@ -29,14 +32,14 @@ public class buttonPlayer : MonoBehaviour
             StartCoroutine(delay());
             canPress = false;
             ActivatePhysicsObject.GetComponent<Rigidbody>().isKinematic = false;
-
+            gameObject.GetComponent<MeshRenderer>().material = noColor;
             StartCoroutine(ActivatePhysicsObject.GetComponent<capsuleFall>().timerRewind());
         } else if (color == "All" && canPress)
         {
             StartCoroutine(delay());
             canPress = false;
             ActivatePhysicsObject.GetComponent<Rigidbody>().isKinematic = false;
-
+            gameObject.GetComponent<MeshRenderer>().material = noColor;
             StartCoroutine(ActivatePhysicsObject.GetComponent<capsuleFall>().timerRewind());
         }
     }
@@ -45,5 +48,6 @@ public class buttonPlayer : MonoBehaviour
     {
         yield return new WaitForSeconds(10f);
         canPress = true;
+        gameObject.GetComponent<MeshRenderer>().material = MaterailColor;
     }
 }
