@@ -133,7 +133,10 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - When you take a color that you already have, it will remove from you
+    - Did you get what happened ?
+    - 'Red plus red equals no more red on you ! Pure magic...! '
+    - 'Just before you had a mix of two colors : green and red and you just lost the
+      red.'
 --- !u!1 &106694418
 GameObject:
   m_ObjectHideFlags: 0
@@ -1773,7 +1776,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1293356479
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2148,7 +2151,7 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - No no, you should have the same color to pass the door
+    - "Tut tut, go get the good color to pass through here !!\r\n"
 --- !u!114 &1625330937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2298,11 +2301,14 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - "Hello White Knight! Let me present you the place you came in : a small country
-      castle completely controlled by my magic.\r"
+    - 'Hello White Knight! Let me present you the place you came in :'
+    - ' a small country castle completely controlled by my magic.'
     - Now that you are trapped here, you will need to finish my puzzles in order to
       get out !
-    - 
+    - Do you remember your school lessons about the additive synthesis color ?
+    - '(or if you are as lazy as I imagine, you can just press the Spacebar Button
+      ...!) '
+    - "This will help you !\r Good luck !"
 --- !u!114 &2048216707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2873,7 +2879,7 @@ PrefabInstance:
     - target: {fileID: 4052275670216964701, guid: 749f4ee8eb1900c4c94aecf831320938,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Ho ho ho, you don't see that you don't have the right color ?
+      value: Oops, it looks like you don't have the correct color to press that button...!
       objectReference: {fileID: 0}
     - target: {fileID: 4052275670216964701, guid: 749f4ee8eb1900c4c94aecf831320938,
         type: 3}
