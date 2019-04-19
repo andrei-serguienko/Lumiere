@@ -112,6 +112,28 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &87995411 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3641323973977089564, guid: 379b16635fa5a57498041989c9a6418a,
+    type: 3}
+  m_PrefabInstance: {fileID: 112589659}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &87995413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87995411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79306b04fe58232458b54573f5020b68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - Delete Color
 --- !u!1 &106694418
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,32 +278,32 @@ PrefabInstance:
     - target: {fileID: 7144557193953374771, guid: 379b16635fa5a57498041989c9a6418a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.0524447
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 7144557193953374771, guid: 379b16635fa5a57498041989c9a6418a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.21
+      value: 1.243
       objectReference: {fileID: 0}
     - target: {fileID: 7144557193953374771, guid: 379b16635fa5a57498041989c9a6418a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.35
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7144557193953374771, guid: 379b16635fa5a57498041989c9a6418a,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7144557193953374771, guid: 379b16635fa5a57498041989c9a6418a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7144557193953374771, guid: 379b16635fa5a57498041989c9a6418a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7144557193953374771, guid: 379b16635fa5a57498041989c9a6418a,
         type: 3}
@@ -539,17 +561,17 @@ PrefabInstance:
     - target: {fileID: 7144557193953374771, guid: 379b16635fa5a57498041989c9a6418a,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7144557193953374771, guid: 379b16635fa5a57498041989c9a6418a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7144557193953374771, guid: 379b16635fa5a57498041989c9a6418a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7144557193953374771, guid: 379b16635fa5a57498041989c9a6418a,
         type: 3}
@@ -559,7 +581,7 @@ PrefabInstance:
     - target: {fileID: 7144557193953374771, guid: 379b16635fa5a57498041989c9a6418a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7144557193953374771, guid: 379b16635fa5a57498041989c9a6418a,
         type: 3}
@@ -584,41 +606,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4814339413242834998}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &593883369 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3641323973977089564, guid: 379b16635fa5a57498041989c9a6418a,
-    type: 3}
-  m_PrefabInstance: {fileID: 112589659}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &593883370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 593883369}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79306b04fe58232458b54573f5020b68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: 
-    sentences:
-    - Delete color
---- !u!114 &593883371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 593883369}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39c9903ceff92304ba15b8e7db76b034, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wrongColor: All
 --- !u!1 &676522613 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1870901012492446524, guid: 19fe836f7e2294545bf95ee84cb4f9ba,
@@ -1355,7 +1342,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400032, guid: b1267be848b09374baa15d506e044704, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400032, guid: b1267be848b09374baa15d506e044704, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2387,7 +2374,9 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - No no, you should have the same color to pass the door
+    - 'Intro speach
+
+'
 --- !u!114 &2048216707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2458,11 +2447,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GreenCookie
-      objectReference: {fileID: 0}
-    - target: {fileID: 8099672902566412357, guid: 5c67850b3ab322645936d8d7e844df40,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1366501980973724391, guid: 5c67850b3ab322645936d8d7e844df40,
         type: 3}
@@ -2576,7 +2560,7 @@ PrefabInstance:
     - target: {fileID: 1870901012492446512, guid: 19fe836f7e2294545bf95ee84cb4f9ba,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1870901012492446512, guid: 19fe836f7e2294545bf95ee84cb4f9ba,
         type: 3}
@@ -2948,6 +2932,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4052275670216964694, guid: 749f4ee8eb1900c4c94aecf831320938,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 268f99d331225cf428a85dddc52bab83, type: 2}
     - target: {fileID: 4052275670216964699, guid: 749f4ee8eb1900c4c94aecf831320938,
         type: 3}
       propertyPath: ActivatePhysicsObject

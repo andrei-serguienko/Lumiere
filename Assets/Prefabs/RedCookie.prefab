@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 4215698961520640256}
   - component: {fileID: 3641323973977089566}
   - component: {fileID: 3641323973977089565}
+  - component: {fileID: 5789416407599945553}
+  - component: {fileID: 593883371}
   m_Layer: 10
   m_Name: RedCookie
   m_TagString: Untagged
@@ -60,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bec4dd508766af74e81fc3a5eabcbf76, type: 2}
+  - {fileID: 2100000, guid: ba7bcfee6a122a9418e222a0fbafd89b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -122,3 +124,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cookieColor: red
+--- !u!95 &5789416407599945553
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3641323973977089564}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6026042403324e9488f313c7762615c2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &593883371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3641323973977089564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39c9903ceff92304ba15b8e7db76b034, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wrongColor: All
