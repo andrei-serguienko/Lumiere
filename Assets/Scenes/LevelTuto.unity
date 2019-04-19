@@ -2092,6 +2092,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 2d790eb5cce7422478271bdd876c72ef, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9aa903920bb56fd44aa8fe23f9083664, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d790eb5cce7422478271bdd876c72ef, type: 3}
 --- !u!1001 &1620487659
@@ -2853,6 +2857,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3477799109082666464, guid: e9b252e057bb50c46922456f0ce8de9d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9aa903920bb56fd44aa8fe23f9083664, type: 2}
     - target: {fileID: 3477799109082666479, guid: e9b252e057bb50c46922456f0ce8de9d,
         type: 3}
       propertyPath: EnableObject
@@ -2942,6 +2951,16 @@ PrefabInstance:
       propertyPath: ActivatePhysicsObject
       value: 
       objectReference: {fileID: 1323129794}
+    - target: {fileID: 4052275670216964699, guid: 749f4ee8eb1900c4c94aecf831320938,
+        type: 3}
+      propertyPath: noColor
+      value: 
+      objectReference: {fileID: 2100000, guid: 9aa903920bb56fd44aa8fe23f9083664, type: 2}
+    - target: {fileID: 4052275670216964699, guid: 749f4ee8eb1900c4c94aecf831320938,
+        type: 3}
+      propertyPath: MaterailColor
+      value: 
+      objectReference: {fileID: 2100000, guid: 268f99d331225cf428a85dddc52bab83, type: 2}
     - target: {fileID: 4052275670216964698, guid: 749f4ee8eb1900c4c94aecf831320938,
         type: 3}
       propertyPath: EnableObject
